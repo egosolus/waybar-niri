@@ -1,0 +1,37 @@
+## Niri Waybar Configuration - Tokyo Night (DWM Style)
+
+A simple and aesthetic Waybar configuration designed for the **Niri** Wayland compositor. This configuration adopts the **DWM style**: minimalist, functional, and strictly organized—while utilizing the **Tokyo Night** color palette.
+
+### Features
+
+* **DWM Style Layout:** Strict separation of elements: workspaces on the left, window title in the center, and system status on the right.
+* **Niri Integration:** Dedicated modules for Niri workspaces (`niri/workspaces`) and window titles (`niri/window`).
+* **Tokyo Night Colors:** Uses a defined color scheme (`bg`, `fg`, `accent`, `purple`, `green`, `cyan`) for all elements.
+* **High-Contrast Status:** System modules (CPU, Memory, Audio, Clock) use distinct background colors with dark text for clear readability.
+
+### WM Used
+(Niri)[https://github.com/YaLTeR/niri]
+
+### Files
+
+This repository contains two main configuration files:
+
+| File Name | Description |
+| :--- | :--- |
+| `config.jsonc` | The main Waybar configuration defining modules, positions, and Niri-specific settings. |
+| `style.css` | The styling file, implementing the Tokyo Night color scheme and module-specific visuals. |
+
+### Prerequisites
+
+* **Waybar:** The custom status bar for Wayland.
+* **Niri:** The required Wayland compositor (as modules are Niri-specific).
+* **Fonts:** `JetBrainsMono Nerd Font` (used for icons and text).
+* **`pavucontrol`:** Required for the `pulseaudio` module's click action.
+
+### Installation
+
+1.  Clone this repository or download the two files (`config.jsonc` and `style.css`).
+2.  Place the files in your Waybar configuration directory, typically:
+    ```bash
+    ~/.config/waybar/
+    ```

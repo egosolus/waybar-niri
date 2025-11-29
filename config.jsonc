@@ -1,0 +1,41 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 0, 
+    
+    "modules-left": ["niri/workspaces"],
+    "modules-center": ["niri/window"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "clock", "tray"],
+
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "●",
+            "default": "○"
+        }
+    },
+
+    "niri/window": {
+        "format": "{}", 
+        "max-length": 50,
+        "rewrite": {
+            "(.*) - Zen Browser": "zen",
+            "^$": "Niri"
+        }
+    },
+
+    "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt>{calendar}</tt>"
+    },
+
+    "cpu": { "format": "CPU {usage}%", "tooltip": false },
+    "memory": { "format": "MEM {}%" },
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "MUT",
+        "on-click": "pavucontrol"
+    },
+    "tray": { "spacing": 10 }
+}
