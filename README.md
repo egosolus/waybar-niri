@@ -2,6 +2,11 @@
 
 A simple and aesthetic Waybar configuration designed for the **Niri** Wayland compositor. This configuration adopts the **DWM style**: minimalist, functional, and strictly organized—while utilizing the **Tokyo Night** color palette.
 
+
+### Preview
+
+![Waybar](screenshots/waybar_screenshot.png)
+
 ### Features
 
 * **DWM Style Layout:** Strict separation of elements: workspaces on the left, window title in the center, and system status on the right.
@@ -10,7 +15,7 @@ A simple and aesthetic Waybar configuration designed for the **Niri** Wayland co
 * **High-Contrast Status:** System modules (CPU, Memory, Audio, Clock) use distinct background colors with dark text for clear readability.
 
 ### WM Used
-(Niri)[https://github.com/YaLTeR/niri]
+[Niri](https://github.com/YaLTeR/niri)
 
 ### Files
 
